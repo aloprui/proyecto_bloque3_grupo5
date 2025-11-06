@@ -1,5 +1,5 @@
 body {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #afafaf 0%, #5b6569 100%);
             min-height: 100vh;
             display: flex;
             align-items: center;
@@ -30,7 +30,7 @@ body {
         }
 
         .form-title {
-            color: #667eea;
+            color: #333333;
             font-size: 2rem;
             font-weight: bold;
             text-align: center;
@@ -44,7 +44,19 @@ body {
             margin-bottom: 30px;
             animation: fadeIn 1s ease-out;
         }
-
+        .form-container::before {
+            content: '';
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            right: -2px;
+            bottom: -2px;
+           
+            background-size: 200% 100%;
+            border-radius: 20px;
+            z-index: -1;
+            animation: neonBorder 2s linear infinite;
+        }
         @keyframes fadeIn {
             from { opacity: 0; }
             to { opacity: 1; }
@@ -95,7 +107,7 @@ body {
         }
 
         .btn-submit {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #999999 0%, #493c57 100%);
             border: none;
             border-radius: 10px;
             color: white;
@@ -114,8 +126,8 @@ body {
             left: -100%;
             width: 100%;
             height: 100%;
-            background: rgba(255, 255, 255, 0.2);
-            transition: left 0.5s ease;
+            background: rgba(12, 12, 12, 0.2);
+            transition: left 0.2s ease;
         }
 
         .btn-submit:hover:before {
@@ -123,23 +135,12 @@ body {
         }
 
         .btn-submit:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 10px 25px rgba(102, 126, 234, 0.4);
+            
+            box-shadow: 0 10px 25px rgba(52, 53, 53, 0.4);
         }
 
         .btn-submit:active {
             transform: translateY(-1px);
-        }
-
-        .success-message {
-            display: none;
-            background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
-            color: white;
-            padding: 15px;
-            border-radius: 10px;
-            text-align: center;
-            margin-top: 20px;
-            animation: bounceIn 0.6s ease;
         }
 
         @keyframes bounceIn {
@@ -153,17 +154,13 @@ body {
             margin-bottom: 20px;
         }
 
-        .contact-icon {
+        .img-contact {
             width: 80px;
             height: 80px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            border-radius: 50%;
             display: inline-flex;
             align-items: center;
             justify-content: center;
-            color: white;
-            font-size: 2.5rem;
-            animation: pulse 2s infinite;
+            animation: pulse 4s infinite;
         }
 
         @keyframes pulse {
