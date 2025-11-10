@@ -363,29 +363,27 @@
         }
 
         .contact-card::before {
-    
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            pointer-events: none;
-            border-radius: 20px;
-    
-            padding: 3px;
-            background: linear-gradient(90deg, 
-                transparent 0%, 
-                transparent 25%,
-                #333 50%,
-                transparent 75%,
-                transparent 100%);
-            background-size: 200% 200%;
-            -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-            -webkit-mask-composite: xor;
-            mask-composite: exclude;
-            animation: borderSlide 4s linear infinite;
-        }
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;  /* ← SOLUCIÓN */
+    border-radius: 20px;
+    padding: 3px;
+    background: linear-gradient(90deg, 
+        transparent 0%, 
+        transparent 25%,
+        #333 50%,
+        transparent 75%,
+        transparent 100%);
+    background-size: 200% 200%;
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    animation: borderSlide 4s linear infinite;
+}
 
         @keyframes borderSlide {
             0% {
