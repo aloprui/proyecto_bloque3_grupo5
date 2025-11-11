@@ -12,7 +12,7 @@
 <body>
     <header class="navbar navbar-dark">
         <div class="container-fluid">
-            <a href="#" class="navbar-brand">
+            <a href="index.html" class="navbar-brand">
                 <img src="img/Imagen de WhatsApp 2025-11-06 a las 12.10.33_add506b2.jpg" alt="Logo" width="50"
                     height="50">
             </a>
@@ -25,10 +25,10 @@
             <div class="collapse navbar-collapse" id="contenidoDelNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a href="#" class="nav-link">Inicio</a>
+                        <a href="index.html" class="nav-link">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#contacto" class="nav-link">Modelos</a>
+                        <a href="compras.html" class="nav-link">Modelos</a>
                     </li>
                 </ul>
             </div>
@@ -39,7 +39,7 @@
         <div class="contact-card">
             <h2>Contáctanos</h2>
 
-            <form id="contactForm">
+            <form id="contactForm" class=".needs-validation" novalidate>
                 <div class="mb-4">
                     <label for="nombre" class="form-label">Nombre</label>
                     <input type="text" id="nombre" class="form-control" placeholder="Tu nombre">
@@ -47,12 +47,12 @@
 
                 <div class="mb-4">
                     <label for="email" class="form-label">Email</label>
-                    <input type="email" id="email" class="form-control" placeholder="tu@email.com">
+                    <input type="email" id="email" class="form-control" placeholder="tu@email.com" required>
                 </div>
 
                 <div class="mb-4">
                     <label for="telefono" class="form-label">Teléfono</label>
-                    <input type="tel" id="telefono" class="form-control" placeholder="+34 600 000 000">
+                    <input type="tel" id="telefono" class="form-control" placeholder="+34 600 000 000" required>
                 </div>
 
                 <div class="mb-4">
@@ -65,7 +65,7 @@
         </div>
     </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
