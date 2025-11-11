@@ -42,26 +42,29 @@
             <form id="contactForm" class="needs-validation" novalidate>
                 <div class="mb-4">
                     <label for="nombre" class="form-label">Nombre</label>
-                    <input type="text" id="nombre" class="form-control" placeholder="Tu nombre" required>
+                    <input type="text" id="nombre" class="form-control" placeholder="Tu nombre" required
+                           pattern="^[A-Za-zÁÉÍÓÚáéíóúÑñ\s]+$" title="Solo letras y espacios">
                 </div>
-
+            
                 <div class="mb-4">
                     <label for="email" class="form-label">Email</label>
                     <input type="email" id="email" class="form-control" placeholder="tu@email.com" required>
                 </div>
-
+            
                 <div class="mb-4">
                     <label for="telefono" class="form-label">Teléfono</label>
-                    <input type="tel" id="telefono" class="form-control" placeholder="+34 600 000 000" required>
+                    <input type="tel" id="telefono" class="form-control" placeholder="+34 600 000 000" required
+                           pattern="^\+?\d{9,15}$" title="Introduce solo números, opcional + al inicio">
                 </div>
-
+            
                 <div class="mb-4">
                     <label for="mensaje" class="form-label">Mensaje</label>
-                    <textarea id="mensaje" class="form-control" placeholder="Cuéntanos qué necesitas..."></textarea>
+                    <textarea id="mensaje" class="form-control" placeholder="Cuéntanos qué necesitas..." required></textarea>
                 </div>
-
+            
                 <button type="submit" class="btn-submit">Enviar Mensaje</button>
             </form>
+
         </div>
     </div>
 
